@@ -1,0 +1,180 @@
+:root {
+	font-family: 'Poppins', sans-serif;
+	background: #0f172a;
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+	padding: 20px;
+}
+
+.main-container {
+	width: 100%;
+	max-width: 500px;
+	background: #1e293b;
+	padding: 25px;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 10px;
+	background: #334155;
+	color: white;
+	font-size: 14px;
+	outline: none;
+	transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+	background: #475569;
+	transform: scale(1.01);
+}
+
+button {
+	border: none;
+	padding: 12px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.3s;
+	background: #3b82f6;
+	color: white;
+}
+
+button:hover {
+	opacity: 0.9;
+	transform: translateY(-2px);
+}
+
+.task-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+
+	max-height: 300px;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	
+}
+.task-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 10px;
+
+	background: #334155;
+	padding: 15px;
+	border-radius: 14px;
+	margin-bottom: 15px;
+
+	transition: 0.3s;
+}
+
+.task-item:hover {
+	transform: translateY(-3px);
+	background: #475569;
+}
+
+.task-content h3 {
+	margin: 0 0 5px;
+	font-size: 18px;
+}
+
+.task-content p {
+	margin: 0;
+	font-size: 14px;
+	color: #d1d5db;
+}
+
+.task-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.task-actions button:first-child {
+	background: #f59e0b;
+}
+
+.task-actions button:last-child {
+	background: #ef4444;
+}
+
+.error-message {
+	color: #f87171;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+.edit-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.edit-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.edit-buttons button:first-child {
+	background: #10b981;
+}
+
+.edit-buttons button:last-child {
+	background: #ef4444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+	.main-container {
+		padding: 20px;
+	}
+
+	.task-item {
+		flex-direction: column;
+	}
+
+	.task-actions {
+		width: 100%;
+		flex-direction: row;
+	}
+
+	.task-actions button {
+		flex: 1;
+	}
+}
