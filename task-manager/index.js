@@ -39,6 +39,7 @@ function handleFormSubmit(event) {
 	errorMessage.textContent = "";
 
 	task.id = Date.now();
+	task.createdAt = new Date().toLocaleString();
 
 	tasks.push(task);
 
@@ -65,8 +66,12 @@ function createTaskElement(task) {
 	const pDescription = document.createElement("p");
 	pDescription.textContent = task.description;
 
+	const smallDate = document.createElement("small");
+	smallDate.textContent = `📅 ${task.createdAt}`;
+
 	divTaskContent.appendChild(h3Title);
 	divTaskContent.appendChild(pDescription);
+	divTaskContent.appendChild(smallDate);
 
 	// ACCIONES
 	const divTaskAction = document.createElement("div");
