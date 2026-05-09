@@ -98,11 +98,11 @@ button:hover {
 	border-radius: 14px;
 	margin-bottom: 15px;
 
-	transition: 0.3s;
+	transition: all 0.3s ease;
 }
 
 .task-item:hover {
-	transform: translateY(-3px);
+	transform: scale(1.02);
 	background: #475569;
 }
 
