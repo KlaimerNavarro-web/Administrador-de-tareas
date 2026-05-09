@@ -9,6 +9,7 @@ function handleFormSubmit(event) {
 	task.title = task.title.trim();
 	task.description = task.description.trim();
 
+
 	const errorMessage = document.getElementById("error-message");
 
 	// VALIDACIONES
@@ -190,6 +191,8 @@ function saveTask(taskId) {
 
 	task.title = newTitle;
 	task.description = newDescription;
+
+	alert("✅ Cambios guardados");
 
 	const updatedTask = createTaskElement(task);
 
