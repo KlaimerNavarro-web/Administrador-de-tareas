@@ -1,5 +1,12 @@
 const tasks = [];
 
+function updateTaskCounter() {
+
+	const counter = document.getElementById("task-counter");
+
+	counter.textContent = `📌 Tareas: ${tasks.length}`;
+}
+
 function handleFormSubmit(event) {
 	event.preventDefault();
 
@@ -51,6 +58,7 @@ function handleFormSubmit(event) {
 	if (!ulContainer) return;
 
 	ulContainer.appendChild(taskElement);
+	updateTaskCounter();
 
 	event.target.reset();
 }
@@ -122,6 +130,7 @@ function deleteTaskElement(taskId) {
 	const taskIndex = tasks.findIndex((task) => task.id === taskId);
 
 	tasks.splice(taskIndex, 1);
+	updateTaskCounter();
 }
 
 // EDITAR TAREA

@@ -185,3 +185,10 @@ button:hover {
 	color: #cbd5e1;
 	font-size: 11px;
 }
+
+#task-counter {
+	text-align: center;
+	color: #cbd5e1;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
