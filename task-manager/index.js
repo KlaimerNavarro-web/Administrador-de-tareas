@@ -88,7 +88,7 @@ function createTaskElement(task) {
 
 	// BOTÓN EDITAR
 	const editButton = document.createElement("button");
-	editButton.textContent = "📝Editar";
+	editButton.textContent = "✏️Editar";
 
 	editButton.addEventListener("click", () => {
 		enableEditTask(task.id);
@@ -223,6 +223,7 @@ function cancelEdit(taskId) {
 
 	oldLi.replaceWith(originalTask);
 }
+
 
 // 	const liTemplate = `
 // <li id="${task.id}" class="task-item">
