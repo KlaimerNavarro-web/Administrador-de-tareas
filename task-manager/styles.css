@@ -192,3 +192,32 @@ button:hover {
 	margin-bottom: 15px;
 	font-size: 14px;
 }
+
+/* MODO CLARO */
+
+.light-mode {
+	background: #f1f5f9;
+	color: #0f172a;
+}
+
+.light-mode .main-container {
+	background: #ffffff;
+}
+
+.light-mode input,
+.light-mode textarea,
+.light-mode #search-task {
+	background: #e2e8f0;
+	color: #0f172a;
+}
+
+.light-mode .task-item {
+	background: #cbd5e1;
+	color: #0f172a;
+}
+
+.light-mode .task-content p,
+.light-mode .task-content small,
+.light-mode #task-counter {
+	color: #334155;
+}

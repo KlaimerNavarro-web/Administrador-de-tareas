@@ -224,6 +224,18 @@ function cancelEdit(taskId) {
 	oldLi.replaceWith(originalTask);
 }
 
+const themeButton = document.getElementById("theme-toggle");
+
+themeButton.addEventListener("click", () => {
+
+	document.body.classList.toggle("light-mode");
+
+	if (document.body.classList.contains("light-mode")) {
+		themeButton.textContent = "🌙 Modo oscuro";
+	} else {
+		themeButton.textContent = "☀️ Modo claro";
+	}
+});
 
 // 	const liTemplate = `
 // <li id="${task.id}" class="task-item">
