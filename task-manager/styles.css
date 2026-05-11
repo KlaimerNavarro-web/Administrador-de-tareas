@@ -221,3 +221,15 @@ button:hover {
 .light-mode #task-counter {
 	color: #334155;
 }
+
+select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	background: #4e78b3;
+	color: white;
+	font-size: 14px;
+	border-left: 5px solid #38bdf8;
+	border-right: 5px solid #38bdf8;
+}

@@ -75,11 +75,15 @@ function createTaskElement(task) {
 	const pDescription = document.createElement("p");
 	pDescription.textContent = task.description;
 
+	const priorityText = document.createElement("small");
+	priorityText.textContent = `Prioridad: ${task.priority}`;
+
 	const smallDate = document.createElement("small");
 	smallDate.textContent = `📅 ${task.createdAt}`;
 
 	divTaskContent.appendChild(h3Title);
 	divTaskContent.appendChild(pDescription);
+	divTaskContent.appendChild(priorityText);
 	divTaskContent.appendChild(smallDate);
 
 	// ACCIONES
